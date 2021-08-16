@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 1</title>
+    <style>
+        .container{
+            width: 500px;
+            margin: 10% auto;
+            
+        }    
+        /* ---------------------------------------------------------------- */
+        /* BANDWIDTH */
+        .Bandwidth-container{
+            height: 40px;
+            background-color: rgb(228, 226, 226);
+            display: flex;
+            margin-bottom: 15px;
+            
+        }   
+            
+
+       
+        .bandwidth-left{
+            background-color: rgb(229, 77, 76);
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .bandwidth-left>span{
+            text-align: mid;
+            padding-right: 10px;
+            color: white;
+            
+
+        }
+        .bandwidth-right{
+            background-color: rgb(247, 83, 84);
+            width: 60px;
+            display: flex;
+            align-items: center;
+
+        }
+        .bandwidth-right>span{
+            color: white;
+            padding-left: 10px;
+
+        }
+        /* ------------------------------------------------------------------------------------------- */
+        /* STORAGE */
+        .storage-container{
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            height: 40px;
+            margin-bottom: 15px;
+            
+            
+        }    
+        .storage-container-left{
+            display: flex;
+            background-color: rgb(45, 184, 205) ;
+            width: 150px;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        .storage-container-left>span{
+            color: white;
+            margin-right: 10px;
+            
+        }   
+        .storage-container-right{
+            background-color:rgb(49, 200, 221) ;
+            width: 180px;
+            display: flex;
+            align-items: center;
+                        
+        }    
+       
+        .storage-container-right>span{
+            color: white;
+            padding-left: 10px;
+        }    
+        /* ----------------------------------------------------------------------- */
+        /* USERS */
+        .users-container{
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            height: 40px;
+            margin-bottom: 15px;
+            
+        }   
+        .users-container-left{
+            display: flex;
+            background-color: rgb(74, 194, 94);
+            width: 150px;
+            align-items: center;
+            justify-content: flex-end;
+            
+
+        } 
+        .users-container-left>span{
+            color: white;
+            padding-right: 10px;
+        }
+        .users-container-right{
+            display: flex;
+            background-color: rgb(81, 213, 103);
+            width: 230px;
+            align-items: center;
+
+        }
+        .users-container-right>span{
+            color: white;
+            padding-left: 10px;
+        }
+        /* ----------------------------------------------------------------------------------- */
+        /* VISITORS */
+        .visitors-container{
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            height: 40px;
+            margin-bottom: 15px;
+
+        }
+        .visitors-left{
+            background-color: rgb(233, 195,24);
+            width: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+        .visitors-left>span{
+            color: white;
+            margin-right: 10px;
+
+        }
+        .visitors-right{
+            background-color: rgb(252, 213, 24);
+            width: 100px;
+            display: flex;
+            align-items: center;
+
+        }
+        .visitors-right>span{
+            color: white;
+            margin-left: 10px;
+
+        }
+        /* --------------------------------------------------------------- */
+        /* EMAILS */
+        .emails-container{
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            height: 40px;
+            margin-bottom: 15px;
+
+        }
+        .emails-left{
+            background-color: rgb(187, 112, 213);
+            width: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+        .emails-left>span{
+            color: white;
+            margin-right: 10px;
+
+        }
+        .emails-right{
+            background-color: rgb(203, 121, 231);
+            width: 150px;
+            display: flex;
+            align-items: center;
+
+        }
+        .emails-right>span{
+            color: white;
+            margin-left: 10px;
+
+        }
+        /* ----------------------------------------------------------------- */
+        /* BASIC */
+        .basic-container{
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            height: 40px;
+            margin-bottom: 15px;
+
+        }
+        .basic-left{
+            background-color: rgb(235, 89, 214);
+            width: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+        .basic-left>span{
+            color: white;
+            margin-right: 10px;
+
+        }
+        .basic-right{
+            background-color: rgb(254,96,232);
+            width: 280px;
+            display: flex;
+            align-items: center;
+
+        }
+        .basic-right>span{
+            color: white;
+            margin-left: 10px;
+
+        }
+        /* -------------------------------------------------------------------- */
+        /* OTHER */
+        .other-container{
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            height: 40px;
+            margin-bottom: 15px;
+
+        }
+        .other-left{
+            background-color: rgb(88, 144, 218);
+            width: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+        .other-left>span{
+            color: white;
+            margin-right: 10px;
+
+        }
+        .other-right{
+            background-color: rgb(97, 155, 236);
+            width: 120px;
+            display: flex;
+            align-items: center;
+
+        }
+        .other-right>span{
+            color: white;
+            margin-left: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- BANDWIDTH -->
+        <div class="Bandwidth-container">
+            <div class="bandwidth-left">
+                <span>BANDWIDTH</span>
+            </div>
+            <div class="bandwidth-right">
+                <span>20%</span>
+            </div>
+        </div>
+        <!-- -------------------------------------------------------------- -->
+        <!-- STORAGE -->
+        <div class="storage-container">
+            <div class="storage-container-left">
+                <span>STORAGE</span>
+            </div>
+            <div class="storage-container-right">
+                <span>50%</span>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------- -->
+        <!-- USER -->
+            
+        <div class="users-container">
+                <div class="users-container-left">
+                    <span>USERS</span>
+                </div>
+                <div class="users-container-right">
+                    <span>70%</span>
+                </div>
+        </div>
+        <!-- --------------------------------------------------------------- --> 
+        <!-- VISITORS -->
+        <div class="visitors-container">
+            <div class="visitors-left">
+                <span>VISITORS</span>
+            </div>
+            <div class="visitors-right">
+                <span>30%</span>
+            </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------- -->
+        <!-- Emails -->
+        <div class="emails-container">
+            <div class="emails-left">
+                <span>EMAILS</span>
+            </div>
+            <div class="emails-right">
+                <span>45%</span>
+            </div>
+        </div>
+        <!-- ----------------------------------------------- -->
+        <!-- BASIC -->
+        <div class="basic-container">
+            <div class="basic-left">
+                <span>BASIC</span>
+            </div>
+            <div class="basic-right">
+                <span>80%</span>
+            </div>
+        </div>
+        <!-- ------------------------------------------------- -->
+        <!-- Other -->
+        <div class="other-container">
+            <div class="other-left">
+                <span>OTHER</span>
+            </div>
+            <div class="other-right">
+                <span>37%</span>
+            </div>
+        </div>
+
+    </div>    
+        
+
+    </div>
+</body>
+</html>

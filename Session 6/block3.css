@@ -1,0 +1,499 @@
+.container{
+    /* background-color: aquamarine; */
+    width: 350px;
+    height: 100vh;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.line{
+    border: 1px solid rgb(239, 239, 239);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+    
+
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}    
+/* -----------today visitor--------------------------------- */    
+
+.today-visitors{
+    border: 1px solid rgb(239, 239, 239);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+}   
+.today-visitors>h3{
+    font-size: 4px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.today-visitors>span{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(49, 201, 225);
+    
+}
+/* ------------------today-visitors-column------------------ */
+.today-visitors-column{
+    margin-left: 3px;
+    display: flex;
+    justify-content: space-around;
+    
+}    
+.today-visitors-column-1{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.today-visitors-column-1-white{
+    background-color: white;
+    height: 12px;
+
+}
+.today-visitors-column-1-red{
+    background-color: red;
+    height: 8px;
+
+}
+.today-visitors-column-2{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}    
+.today-visitors-column-2-white{
+    background-color: white;
+    height: 14px;
+}
+.today-visitors-column-2-green{
+    background-color: green;
+    height: 6px;
+}   
+.today-visitors-column-3{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}    
+.today-visitors-column-3-white{
+    background-color: white;
+    height: 6px;
+}
+.today-visitors-column-3-yellow{
+    background-color: yellow;
+    height: 14px;
+}   
+.today-visitors-column-4{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}    
+.today-visitors-column-4-white{
+    background-color: white;
+    height: 4px;
+}
+.today-visitors-column-4-aqua{
+    background-color: aqua;
+    height: 16px;
+}   
+.today-visitors-column-5{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}    
+.today-visitors-column-5-white{
+    background-color: white;
+    height: 7px;
+}
+.today-visitors-column-5-orange{
+    background-color: orange;
+    height: 13px;
+}   
+/* -------------------today-visitors Day-----------------------------  */
+.today-visitors-day{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -3px;
+    margin-top: 3px;
+    
+    
+}
+.today-visitors-day>span{
+    font-size: 3px;
+}
+
+
+/* ----------------------yesterday-visitors--------------------------------------- */
+.yesterday-visitors{
+    border: 1px solid rgb(239, 239, 239);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.yesterday-visitors>h3{
+    font-size: 4px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.yesterday-visitors>span{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(49, 201, 225);
+    
+}
+/* ------------------yesterday-visitors-column------------------ */
+.yesterday-visitors-column{
+    margin-left: 3px;
+    display: flex;
+    justify-content: space-around;
+    
+}  
+.yesterday-visitors-column-1{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.yesterday-visitors-column-1-white{
+    background-color: white;
+    height: 12px;
+
+}
+.yesterday-visitors-column-1-red{
+    background-color: red;
+    height: 8px;
+
+}
+.yesterday-visitors-column-2{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.yesterday-visitors-column-2-white{
+    background-color: white;
+    height: 14px;
+
+}
+.yesterday-visitors-column-2-green{
+    background-color: green;
+    height: 6px;
+
+}
+.yesterday-visitors-column-3{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.yesterday-visitors-column-3-white{
+    background-color: white;
+    height: 6px;
+
+}
+.yesterday-visitors-column-3-yellow{
+    background-color: yellow;
+    height: 14px;
+
+}
+.yesterday-visitors-column-4{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.yesterday-visitors-column-4-white{
+    background-color: white;
+    height: 4px;
+
+}
+.yesterday-visitors-column-4-aqua{
+    background-color: aqua;
+    height: 16px;
+
+}
+.yesterday-visitors-column-5{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.yesterday-visitors-column-5-white{
+    background-color: white;
+    height: 7px;
+
+}
+.yesterday-visitors-column-5-orange{
+    background-color: orange;
+    height: 13px;
+
+}
+/* ------------------yesterday-visitors-day------------------------- */
+.yesterday-visitors-day{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -3px;
+    margin-top: 3px;
+    
+    
+}
+.yesterday-visitors-day>span{
+    font-size: 3px;
+}
+
+
+/* ----------------------total-downloads--------------------------------------- */
+.total-downloads{
+    border: 1px solid rgb(239, 239, 239);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.total-downloads>h3{
+    font-size: 4px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.total-downloads>span{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(49, 201, 225);
+    
+}
+/* ----------------------total-downloads-column--------------------------------------- */
+.total-downloads-column{
+    margin-left: 3px;
+    display: flex;
+    justify-content: space-around;
+    
+}  
+.total-downloads-column-1{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.total-downloads-column-1-white{
+    background-color: white;
+    height: 12px;
+
+}
+.total-downloads-column-1-red{
+    background-color: red;
+    height: 8px;
+
+}
+.total-downloads-column-2{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.total-downloads-column-2-white{
+    background-color: white;
+    height: 14px;
+
+}
+.total-downloads-column-2-green{
+    background-color: green;
+    height: 6px;
+
+}
+.total-downloads-column-3{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.total-downloads-column-3-white{
+    background-color: white;
+    height: 6px;
+
+}
+.total-downloads-column-3-yellow{
+    background-color: yellow;
+    height: 14px;
+
+}
+.total-downloads-column-4{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.total-downloads-column-4-white{
+    background-color: white;
+    height: 4px;
+
+}
+.total-downloads-column-4-aqua{
+    background-color: aqua;
+    height: 16px;
+
+}
+.total-downloads-column-5{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.total-downloads-column-5-white{
+    background-color: white;
+    height: 7px;
+
+}
+.total-downloads-column-5-orange{
+    background-color: orange;
+    height: 13px;
+
+}
+/* ------------------total-downloads-day------------------------- */
+.total-downloads-day{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -3px;
+    margin-top: 3px;
+    
+    
+}
+.total-downloads-day>span{
+    font-size: 3px;
+}
+
+/* ----------------------.current-income--------------------------------------- */
+.current-income{
+    border: 1px solid rgb(239, 239, 239);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+.current-income>h3{
+    font-size: 4px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.current-income>span{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(49, 201, 225);
+    
+}
+/* ----------------------.current-income-column-------------------------------------- */
+.current-income-column{
+    margin-left: 3px;
+    display: flex;
+    justify-content: space-around;
+    
+}  
+.current-income-column-1{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.current-income-column-1-white{
+    background-color: white;
+    height: 12px;
+
+}
+.current-income-column-1-red{
+    background-color: red;
+    height: 8px;
+
+}
+.current-income-column-2{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.current-income-column-2-white{
+    background-color: white;
+    height: 14px;
+
+}
+.current-income-column-2-green{
+    background-color: green;
+    height: 6px;
+
+}
+.current-income-column-3{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.current-income-column-3-white{
+    background-color: white;
+    height: 6px;
+
+}
+.current-income-column-3-yellow{
+    background-color: yellow;
+    height: 14px;
+
+}
+.current-income-column-4{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.current-income-column-4-white{
+    background-color: white;
+    height: 4px;
+
+}
+.current-income-column-4-aqua{
+    background-color: aqua;
+    height: 16px;
+
+}
+.current-income-column-5{
+    border: 1px solid rgb(239, 239, 239);
+    height: 20px;
+    width: 5px;
+    margin-right: 4px;
+}
+.current-income-column-5-white{
+    background-color: white;
+    height: 7px;
+
+}
+.current-income-column-5-orange{
+    background-color: orange;
+    height: 13px;
+
+}
+/* ------------------current-income-day------------------------- */
+.current-income-day{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -3px;
+    margin-top: 3px;
+    
+    
+}
+.current-income-day>span{
+    font-size: 3px;
+}

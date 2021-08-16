@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> block 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+        
+        .container{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+            
+        }
+        /* -------------------------- */
+        /* background */
+
+        .background-img{
+            background-image: url(block-2.jpg);
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            
+            
+            
+        }
+        .background-avata{
+            height: 80px;
+            width: 80px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+        }
+        .background-avata>img{
+            border-radius: 40px;
+        }
+        .background-profile{
+            color: white;
+            padding-left: 15px;
+        }
+        .background-profile>h2{
+            color: white;
+            margin-bottom: 0;
+            
+        }  
+        .background-profile>p{
+            color: white;
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        } 
+        /* ------------------------------------ */
+        /* followers */
+        .followers-container{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            
+            border: 1px solid rgb(222, 222, 222);
+
+        }
+        .followers-container-left{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            
+        }
+        .followers-container-left>span{
+            color: rgb(123, 120, 115);
+
+        }
+        .followers-container-right{
+            display: flex;
+            align-items: center;
+            padding-right: 20px;
+
+        }
+        .followers-container-right>span{
+            color: white;
+            background-color: rgb(240, 81 ,78);
+            border: 1px solid rgb(240, 81 ,78);
+            border-radius: 3px;
+
+        }
+        /* ---------------------------------------------------------------------- */
+        /* Followings */
+        .followings-container{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            
+            border: 1px solid rgb(222, 222, 222);
+
+        }
+        .followings-container-left{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            
+        }
+        .followings-container-left>span{
+            color: rgb(123, 120, 115);
+            
+
+        }
+        .followings-container-right{
+            display: flex;
+            align-items: center;
+            padding-right: 20px;
+            
+
+        }
+        .followings-container-right>span{
+            color: white;
+            background-color: rgb(50, 201, 222);
+            border: 1px solid rgb(50, 201, 222);
+            border-radius: 3px;
+            
+            
+        }
+        /* ------------------------------------------------------ */
+        /* Messages */
+        .messages-container{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            
+            border: 1px solid rgb(222, 222, 222);
+
+        }
+        .messages-container-left{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            
+        }
+        .messages-container-left>span{
+            color: rgb(123, 120, 115);
+
+        }
+        .messages-container-right{
+            display: flex;
+            align-items: center;
+            padding-right: 20px;
+
+            
+
+        }
+        .messages-container-right>span{
+            color: white;
+            background-color: rgb(77, 214, 98);
+            border: 1px solid rgb(77, 214, 98);
+            border-radius: 3px;
+        }
+        /* ------------------------------------------ */
+        /* Like */
+        .like-container{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            
+            border: 1px solid rgb(222, 222, 222);
+
+        }
+        .like-container-left{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            
+        }
+        .like-container-left>span{
+            color: rgb(123, 120, 115);
+
+        }
+        .like-container-right{
+            display: flex;
+            align-items: center;
+            padding-right: 20px;
+            
+
+        }
+        .like-container-right>span{
+            color: white;
+            background-color: rgb(250, 210, 26);
+            border: 1px solid rgb(250, 210, 26) ;
+            border-radius: 3px;
+        }
+        /* -------------------------------------- */
+        /* comments */
+        .comments-container{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            
+            border: 1px solid rgb(222, 222, 222);
+
+        }
+        .comments-container-left{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            
+        }
+        .comments-container-left>span{
+            color: rgb(123, 120, 115);
+
+        }
+        .comments-container-right{
+            display: flex;
+            align-items: center;
+            padding-right: 20px;
+            
+
+        }
+        .comments-container-right>span{
+            color: white;
+            background-color: rgb(203, 121, 229 );
+            border: 1px solid rgb(203, 121, 229 ) ;
+            border-radius: 3px;
+        }
+        /* ---------------------------------- */
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- --------------------------------------- -->
+        <!-- background image -->
+        <div class="background-img">
+            <div class="background-avata">
+                <img src="avata.jpg" width= 80px; height= 80px >
+            </div>
+            <div class="background-profile">
+                <h2>Joseph Max</h2>
+                <p>Web Designer</p>
+                    
+            </div>
+        </div>
+        <!-- ---------------------------------------------------- -->
+        <!-- followers -->
+        <div class="followers-container">
+            <div class="followers-container-left">
+                <span>Followers</span>
+            </div>
+            <div class="followers-container-right">
+                <span>1200</span>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <!-- Followings -->
+        <div class="followings-container">
+            <div class="followings-container-left">
+                <span>Followings</span>
+            </div>
+            <div class="followings-container-right">
+                <span>1200</span>
+            </div>
+            
+        </div>
+        <!-- ---------------------------------- -->
+        <!-- Messages -->
+        <div class="messages-container">
+            <div class="messages-container-left">
+                <span>Messages</span>
+            </div>
+            <div class="messages-container-right">
+                <span>1200</span>
+            </div>
+        </div>
+        <!-- ----------------------------- -->
+        <!-- like -->
+        <div class="like-container">
+            <div class="like-container-left">
+                <span>Likes</span>
+            </div>
+            <div class="like-container-right">
+                <span>1200</span>
+            </div>
+        </div>
+        <!-- -------------------------- -->
+        <!-- comments -->
+        <div class="comments-container">
+            <div class="comments-container-left">
+                <span>Comments</span>
+            </div>
+            <div class="comments-container-right">
+                <span>1200</span>
+            </div>
+        </div>
+        
+        
+
+    </div>
+</body>
+</html>
