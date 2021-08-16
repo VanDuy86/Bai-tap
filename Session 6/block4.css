@@ -1,0 +1,509 @@
+.container{
+    background-color: white;
+    width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+/* -----------developing bg-name------------ */
+.developing{
+    background-color: white;
+    width: 300px;
+    height: 650px;
+    border: 1px solid rgb( 170, 177, 187);
+}
+.developing-bg{
+
+}
+.developing-bg-img{
+    
+}
+.developing-bg-name{
+    text-align: center;
+    
+
+}
+.developing-bg-name>h3{
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.developing-bg-name>span{
+    color: rgb( 170, 177, 187);
+    
+}
+/* ------------developing-info----------------- */
+.developing-info{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px dotted black;
+    
+    
+}
+.developing-info-icon{
+    display: flex;
+    align-items: center;
+    
+}
+.developing-info-icon>span{
+    margin-left: 10px;
+    
+
+}
+.developing-info-birth{
+    display: flex;
+    align-items: center;
+}
+/* --------------------developing-email---------------- */
+.developing-email{
+    display: flex;
+    background-color: rgb(247, 83, 84);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.developing-email-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.developing-email-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.developing-email-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.developing-email-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
+/* -----------------developing contact------------------ */
+.developing-contact{
+    display: flex;
+    background-color: rgb(81, 213, 103);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.developing-contact-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.developing-contact-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.developing-contact-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.developing-contact-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
+
+/* -----------designer name-------------------------- */
+.designer{
+    background-color: white;
+    width: 300px;
+    height: 650px;
+    border: 1px solid rgb( 170, 177, 187);
+}
+.designer-bg{
+
+}
+.designer-bg-img{
+    
+}
+.designer-bg-name{
+    text-align: center;
+    
+
+}
+.designer-bg-name>h3{
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.designer-bg-name>span{
+    color: rgb( 170, 177, 187);
+    
+}
+/* --------------------designer info ----------------*/
+.designer-info{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px dotted black;
+    
+    
+}
+.designer-info-icon{
+    display: flex;
+    align-items: center;
+    
+}
+.designer-info-icon>span{
+    margin-left: 10px;
+    
+
+}
+.designer-info-birth{
+    display: flex;
+    align-items: center;
+}
+/* ---------------------designer-email---------------------- */
+.designer-email{
+    display: flex;
+    background-color: rgb(49, 200, 221);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.designer-email-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.designer-email-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.designer-email-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.designer-email-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
+/* ---------------------designer contact---------------------- */
+.designer-contact{
+    display: flex;
+    background-color: rgb(97,155,236);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.designer-contact-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.designer-contact-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.designer-contact-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.designer-contact-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
+/* -----------ui-designer name-------------------------- */
+.ui-designer{
+    background-color: white;
+    width: 300px;
+    height: 650px;
+    border: 1px solid rgb( 170, 177, 187);
+}
+.ui-designer-bg{
+
+}
+.ui-designer-bg-img{
+    
+}
+.ui-designer-bg-name{
+    text-align: center;
+    
+
+}
+.ui-designer-bg-name>h3{
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.ui-designer-bg-name>span{
+    color: rgb( 170, 177, 187);
+    
+}
+/* -----------ui-designer info-------------------------- */
+.ui-designer-info{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px dotted black;
+    
+    
+}
+.ui-designer-info-icon{
+    display: flex;
+    align-items: center;
+    
+}
+.ui-designer-info-icon>span{
+    margin-left: 10px;
+    
+
+}
+.ui-designer-info-birth{
+    display: flex;
+    align-items: center;
+}
+/* --------------ui designer email----------------- */
+.ui-designer-email{
+    display: flex;
+    background-color: rgb(247, 129, 83);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.ui-designer-email-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.ui-designer-email-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.ui-designer-email-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.ui-designer-email-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+}
+/* ---------------------ui designer contact---------------------- */
+.ui-designer-contact{
+    display: flex;
+    background-color: rgb(252, 213, 24);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.ui-designer-contact-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.ui-designer-contact-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.ui-designer-contact-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.ui-designer-contact-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
+/* -----------testing name-------------------------- */
+.testing{
+    background-color: white;
+    width: 300px;
+    height: 650px;
+    border: 1px solid rgb( 170, 177, 187);
+}
+.testing-bg{
+
+}
+.testing-bg-img{
+    
+}
+.testing-bg-name{
+    text-align: center;
+    
+
+}
+.testing-bg-name>h3{
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.testing-bg-name>span{
+    color: rgb( 170, 177, 187);
+    
+}
+/* --------------------testing info ----------------*/
+.testing-info{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px dotted black;
+    
+    
+}
+.testing-info-icon{
+    display: flex;
+    align-items: center;
+    
+}
+.testing-info-icon>span{
+    margin-left: 10px;
+    
+
+}
+.testing-info-birth{
+    display: flex;
+    align-items: center;
+}
+/* ---------------------testing-email---------------------- */
+.testing-email{
+    display: flex;
+    background-color: rgb(203,121,231);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.testing-email-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.testing-email-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.testing-email-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.testing-email-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
+/* ---------------------testing contact---------------------- */
+.testing-contact{
+    display: flex;
+    background-color: rgb(254, 96, 232);
+    width: 250px;
+    height: 70px;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+.testing-contact-id{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.testing-contact-id>span{
+    color: white;
+    font-weight: bold;
+
+}
+.testing-contact-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.testing-contact-icon>span{
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    
+} 
