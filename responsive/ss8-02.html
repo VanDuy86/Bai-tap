@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            /* height: 100vh; */
+            /* background-color: aqua; */
+            margin: 0 auto;
+            
+            
+        }
+        .main-container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            
+            height: auto;
+            
+
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+        }
+        .avata{
+            display: flex;
+            align-items: center;
+        }
+            
+        .avata>img{
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+        .name{
+            margin-top: -18px;
+            margin-left: 5px;
+        }
+        .name>h5{
+            margin-bottom: 0;
+            font-size: 14px;
+            color: rgb(9, 197, 9);
+        }
+        .name>span{
+            font-size: 12px;
+            
+        }
+        .img{
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .article{
+            margin-left: 10px;
+            
+        }
+        .border-bottom{
+            border: 1px solid black;
+            width: 80%;
+            margin-left: 5px;
+        }
+        .border-bottom-2{
+            border: 1px solid black;
+            width: 79%;
+            margin-left: 10px;
+            margin-bottom: 30px;
+        }
+        .social{
+            margin-left: 5px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .social-left{
+            flex: 1;
+            margin-top: 5px;
+            align-items: center;
+            display: flex;
+            
+        }
+        .social-right{
+            flex: 2;
+            display: flex;
+            align-items: center;
+            padding-left: 210px;
+            font-size: 12px;
+            
+        }
+        .social-right>p{
+            margin-right: 20px;
+        }
+        
+        @media screen and (max-width:992px){
+            .main-container{
+                flex-direction: column;
+                
+            }
+            .avata{
+                margin-left: 10px;
+            }
+            .img{
+                width: 95%;
+                margin-left: 20px;
+            }
+            .article{
+                width: 85%;
+                margin-left: 20px;
+            }
+            .social{
+                width: 90%;
+                
+            }
+            .social-right{
+                padding-left: 20px;
+            }
+            .border-bottom{
+                width: 85%;
+            }
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <section>
+                <div class="avata">
+                    <img src="../img7.jpg" width="80px" height="80px">
+                    <div class="name">
+                        <h5>Alex Teseira</h5> 
+                        <span>May 31 2017 - 5 min read</span>
+                    </div>
+                </div> 
+                <!-- -------------------------- -->
+                <div class="img">
+                    <img src="../1.jpg" width="80%">
+                </div> 
+                <!-- -------------------------- -->
+                <div class="article">
+                    <h1>Exclusive interview with InVision's CEO</h1>
+                    <p>Clark Valberg is the founder and CEO of InVision. If you are a designer, you have probably gotten</p> 
+                    <p>an email from Clark or from InVision at one time or another, but if you’re not familiar with the</p>
+                    <p>company.</p>
+
+                </div>
+                <div class="border-bottom"></div> 
+                <!-- ---------------------------- -->
+                <div class="social">
+                    
+                    <div class="social-left">
+                        <span class="iconify" data-icon="ei:heart" data-width="30"></span>
+                        <p>5k</p>
+                    </div>
+                    <div class="social-right">
+                        <span class="iconify" data-icon="bx:bx-comment-detail" data-width="20"></span>
+                        <p>10 Comments</p>
+                        <span class="iconify" data-icon="bi:bookmark-fill" data-width="17"></span>
+                        <p> Bookmark</p>
+                        
+                        
+                    </div>
+                     
+                </div>
+                <div class="border-bottom"></div>    
+            </section>
+        </div>
+    </div>
+</body>
+</html>
