@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+    <style>
+        html{
+            font-size: 62.5%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(to right top, #ff7979,#7ed6df);
+            background-repeat: no-repeat;
+            height: max-content;
+        }
+       input{
+           display: block;
+           padding: 12px, 20px;
+           width: 40rem;
+           height: 3.5rem;
+           margin-left: 7rem;
+           border: 1px solid rgb(219, 219, 219);
+       }
+       input:hover{
+           border: 1px solid rgb(219, 219, 219);
+       }
+
+       label{
+           display: block;
+           padding: 3px;
+           font-size: 1.5rem;
+           margin-left: 7rem;
+       }
+       select{
+            width: 40.8rem;
+           height: 3.5rem;
+           /* margin-left: 7rem; */
+           padding: 7px;
+           margin: 1rem 0 0.5rem 7rem;
+           border: 1px solid rgb(219, 219, 219);
+           
+       }
+       input[type=checkbox]{
+            width: 2rem;
+            height: 2rem;
+            margin-left: 7rem;
+            margin-top: 0.3rem;
+       }
+       textarea{
+           resize: none;
+           margin-left: 7rem;
+           width: 40rem;
+           border: 1px solid rgb(219, 219, 219);
+           margin-top: 2rem;
+           margin-bottom: 2rem;
+       }
+       .title{
+           text-align: center;
+           padding-top: 2rem;
+       }
+       
+       .name{
+           background: white;
+           width: 60rem;
+           height: 50rem;
+           border-radius: 1.5rem;
+           height: max-content;
+           margin: 5rem 50rem;
+       }
+       .form-dang-ky{
+          margin: 0 auto;
+       }
+       #like{
+           display: flex;
+           font-size: 1.3rem;
+           margin-top: 2rem;
+           align-items: center;
+           margin-left: 4rem;
+           
+       }
+    </style>
+<body>
+    <div class="form-dang-ky">
+        <div class="name">
+            <div class="title">
+                <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+            </div>
+            <form action="#">
+                <label for="name">Họ và Tên</label>
+                <input type="text" placeholder="Họ và tên">
+                
+                <select name="gender" >
+                    <label for="">Gioi</label>
+                    <option value="gender" >Chọn giới tính</option>
+                    <option value="gender" >Nam</option>
+                    <option value="gender">Nữ</option>
+                    <option value="gender">Không xác định</option>
+                </select>
+                <label for="password">Mật Khẩu</label>
+                <input type="password" placeholder="Nhập mật Khẩu"> 
+                <label for="email">Nhập email</label>
+                <input type="email" placeholder="Nhập email"> 
+                <label for="address">Địa Chỉ</label>
+                <input type="text" placeholder="Địa Chỉ">
+                <select name="city" id="">
+                    <option value="">Chọn Thành Phố</option>
+                    <option value="HCM">TP.HCM</option>
+                    <option value="DN">TP.Đà Nẵng</option>
+                    <option value="HUE">TP.HUẾ</option>
+                    <option value="HN">TP.Hà Nội</option>
+                </select>
+                <select name="" id="">
+                    <option value="Nation">Quốc Gia</option>
+                    <option value="">VN</option>
+                </select>
+                <select name="" id="">
+                    <option value="">Ngoại ngữ</option>
+                    <option value="">Tiếng Anh</option>
+                    <option value="HCM">Hàn Quốc</option>
+                    <option value="DN">Tiếng Nhật</option>
+                    <option value="HUE">Tiếng Đức</option>
+                </select>
+                <div id="like">
+                    <input type="checkbox"> Ẩm thực
+                    <input type="checkbox"> Du Lịch
+                    <input type="checkbox"> Khác
+                    
+                </div>
+                <textarea name="" id="" cols="30" rows="10">Giới Thiệu Bản Thân</textarea>
+            </form>
+
+            
+        </div>
+    </div>
+</body>
+</html>
