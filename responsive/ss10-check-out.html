@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="res.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="check-out">
+        <div class="title">
+          <h1>Responsive Checkout Form</h1>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="left-container">
+                    <div class="billing">
+                        <div class="bill-text">
+                          <h3>Billing Address</h3>
+                        </div>
+                        <!-- Full Name -->
+                        <div class="full-name">
+                          <div class="icon">
+                            <span
+                              class="iconify"
+                              data-icon="clarity:avatar-solid"
+                              data-width="16"
+                            ></span>
+                            <span class="text">Full Name</span>
+                          </div>
+                          <div class="input-fullname">
+                            <label for="text"></label>
+                            <input type="text" placeholder="John M. Doe" />
+                          </div>
+                        </div>
+                        <!-- email -->
+                        <div class="full-name">
+                          <div class="icon">
+                            <span
+                              class="iconify"
+                              data-icon="clarity:email-solid"
+                              data-width="16"
+                            ></span>
+                            <span class="text">Email</span>
+                          </div>
+                          <div class="input-fullname">
+                            <label for="text"></label>
+                            <input type="email" placeholder="John@example.com" />
+                          </div>
+                        </div>
+                        <!-- address -->
+                        <div class="full-name">
+                          <div class="icon">
+                            <span
+                              class="iconify"
+                              data-icon="fa:address-card-o"
+                              data-width="16"
+                            ></span>
+                            <span class="text-address">Address</span>
+                          </div>
+                          <div class="input-fullname">
+                            <label for="text"></label>
+                            <input type="email" placeholder="542 W. 15th Street" />
+                          </div>
+                        </div>
+                        <!-- City -->
+                        <div class="full-name">
+                          <div class="icon">
+                            <span
+                              class="iconify"
+                              data-icon="ant-design:bank-filled"
+                              data-width="16"
+                            ></span>
+                            <span class="text">City</span>
+                          </div>
+                          <div class="input-fullname">
+                            <label for="text"></label>
+                            <input type="email" placeholder="New York" />
+                          </div>
+                        </div>
+                        <div class="state-zip">
+                          <!-- state -->
+                          <div class="state">
+                            <div class="state-text">
+                              <p>State</p>
+                            </div>
+                            <input class="state-input" type="text" placeholder="NY" />
+                          </div>
+                          <!-- zip -->
+                          <div class="zip">
+                            <div class="state-text">
+                              <p>Zip</p>
+                            </div>
+                            <input class="state-input" type="text" placeholder="10001" />
+                          </div>
+                        </div>
+                        <!-- shipping -->
+                        <div class="shipping">
+                          <input type="checkbox" name="" id="" />
+                          <span class="shipping-text"
+                            >Shipping address same as billing</span
+                          >
+                        </div>
+                        
+                    </div>
+                      <!-- payment -->
+                      <div class="payment">
+                        <div class="bill-text">
+                          <h3>Payment</h3>
+                        </div>
+                        <div class="accept-cards">
+                          <div class="accept-cards-text">
+                            <p>Accept Cards</p>
+                          </div>
+                          <div class="accept-cards-icon">
+                            <span
+                              class="iconify"
+                              data-icon="cib:cc-visa"
+                              data-width="30"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="cib:cc-mastercard"
+                              style="color: red"
+                              data-width="30"
+                            ></span>
+                            <span
+                              class="iconify"
+                              data-icon="fa-brands:cc-discover"
+                              style="color: orange"
+                              data-width="33"
+                            ></span>
+                          </div>
+                          <!-- name on card -->
+                          <div class="full-name">
+                            <div class="icon">
+                              <p class="name-on-card-text">Name on Card</p>
+                            </div>
+                            <div class="name-on-card">
+                              <label for="text"></label>
+                              <input class="" type="john-more-doe" placeholder="John More Doe" />
+                            </div>
+                          </div>
+                          <!-- Credit Card Number -->
+                          <div class="full-name">
+                            <div class="icon">
+                              <p class="credit-card-text">Credit Card Number</p>
+                            </div>
+                            <div class="Credit-card-number">
+                              <label for="text"></label>
+                              <input type="card-number" placeholder="1111-2222-3333-4444" />
+                            </div>
+                          </div>
+                          <!-- exp month -->
+                          <div class="full-name">
+                            <div class="icon">
+                              <span>Exp Month</span>
+                            </div>
+                            <div class="exp-month">
+                              <label for="text"></label>
+                              <input type="september" placeholder="Septemper" />
+                            </div>
+                          </div>
+                          <!-- exp-year-cvv -->
+                          <div class="exp-year-cvv">
+                            <!-- exp year -->
+                            <div class="state">
+                              <div class="state-text">
+                                <p>Exp Year</p>
+                              </div>
+                              <input class="exp-input" type="exp-input" placeholder="2018" />
+                            </div>
+                            <!-- CVV -->
+                            <div class="state">
+                              <div class="cvv-text">
+                                <p>CVV</p>
+                              </div>
+                              <input class="cvv-input" type="cvv-input" placeholder="352" />
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                  <!-- button -->
+                <div class="button">
+                    <button>Continue To Check Out</button>
+                </div>
+            </div>
+              <!-- Right -->
+            <div class="right">
+                <div class="cart">
+                    <!-- cart left -->
+                  <div class="cart-left">
+                    <div class="cart-text">
+                      <p>Cart</p>
+                    </div>
+                    <div class="cart-item">
+                      <p>Item 1</p>
+                    </div>  
+                    <div class="cart-item">
+                      <p>Item 2</p>
+                    </div> 
+                    <div class="cart-item">
+                      <p>Item 3</p>
+                    </div> 
+                    <div class="cart-item">
+                      <p>Item 4</p>
+                    </div> 
+                    <div class="total-text">
+                      <p>Total</p>
+                    </div>
+                  </div>
+                    <!-- cart right -->
+                  <div class="cart-right">
+                    <div class="cart-icon">
+                      <span class="iconify" data-icon="dashicons:cart" style="color: orange;" data-width="25"></span>
+                    </div>
+                    <div class="usd">
+                      <p>$15</p>
+                    </div>
+                    <div class="usd">
+                      <p>$5</p>
+                    </div>
+                    <div class="usd">
+                      <p>$8</p>
+                    </div>
+                    <div class="usd">
+                      <p>$2</p>
+                    </div>
+                    <div class="total-usd">
+                      <p>$30</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                  
+              </div>
+            
+        </div>
+</body>
+</html>

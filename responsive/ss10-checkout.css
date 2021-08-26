@@ -1,0 +1,206 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+.check-out{
+    /* background-color: aqua; */
+    width: 100%;
+}
+.title{
+    margin-left: 2rem;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.content{
+    display: flex;
+}
+.left{
+    width: 70%;
+    background-color: #F2F2F2;
+    height: auto;
+    border: 1px solid #D7D7D7;
+    margin-left: 2rem;
+}
+.left-container{
+    width: 100%;
+    display: flex;
+    
+}
+
+.billing{
+    margin-left: 2rem;
+}
+.bill-text{
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+}
+.full-name{
+    margin-bottom: 2rem;
+}
+.icon{
+    font-size: 1rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+   
+}
+.text{
+    margin-left: 0.3rem;
+    font-size: 1rem;
+}
+.text-address{
+    margin-top: -0.1rem;
+    margin-left: 0.3rem;
+}
+input{
+    width: 400px;
+    height: 2.8rem;
+    outline: none;
+    border-radius: 0.3rem;
+    border: 1px solid #D7D7D7;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+.state-zip{
+    display: flex;
+    font-size: 0.9rem;
+    margin-top: -1rem;
+}
+.state-input{
+    width: 180px;
+    height: 3rem;
+    padding-left: 0.5rem;
+    margin-top: -0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+.state{
+    margin-right: 2.4rem;
+}
+.state-text>p{
+    font-size: 1rem;
+}
+.shipping{
+   font-size: 1rem;
+   margin-top: 1.5rem;
+}
+input[type=checkbox]{
+    width: 12px;
+    height: 12px;
+    
+    font-size: 1rem;
+    align-items: center;
+}
+/* ----------payment---------- */
+.payment{
+    margin-left: 3rem;
+}
+.accept-cards{
+    
+}
+.accept-cards-icon{
+    margin-bottom: 1rem;
+    
+}
+.accept-cards-text{
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+    color: #0A0B0B;
+    
+}
+
+.name-on-card>input{
+    width: 410px;
+    
+}
+.name-on-card-text{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.Credit-card-number>input{
+    margin-top: -0.3rem;
+    width: 410px;
+}
+.credit-card-text{
+    font-size: 1rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.4rem;
+}
+.exp-month>input{
+    width: 410px;
+}
+.exp-year-cvv{
+    display: flex;
+    margin-top: -0.83rem;
+}
+.cvv-text>p{
+    font-size: 1rem;
+    
+}
+
+.cvv-input{
+    width: 185px;
+    height: 3rem;
+    padding-left: 0.5rem;
+    margin-top: -0.5rem;
+    font-family: 'Roboto', sans-serif;
+}  
+.exp-input{
+    width: 185px;
+    height: 3rem;
+    padding-left: 0.5rem;
+    margin-top: -0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: none;
+    outline: none;
+    background-color: #555555;
+    width: 93%;
+    height: 60px;
+    margin-bottom: 3rem;
+     color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* right */
+.cart{
+    display: flex;
+    background-color: #F2F2F2;
+    border: 1px solid #D7D7D7;
+    width: 200px;
+    height: auto;
+    margin-left: 2rem;
+    font-size: 1rem;
+    justify-content: space-between;
+    text-align: justify;
+    align-items: center;
+    
+}
+.cart-text>p{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.cart-icon{
+    margin-top: 0.5rem;
+}
+.cart-item, .total-text{
+    margin-left: 1rem;
+}
+.usd, .total-usd{
+    margin-right: 1rem;
+}
+
+    

@@ -1,0 +1,96 @@
+@media screen and (max-width:1400px){
+     .left{
+        width: 77%;
+    } 
+    .bill-text{
+        margin-bottom: -10px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .content{
+        align-items: center;
+    }
+    .left-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        width: 77%;
+    }
+    .payment{
+        margin-left: 80px;
+    }
+    .cart{
+        margin-top: 20px;
+        
+        
+    }
+    
+}
+ @media screen and (max-width:992px){
+   .content{
+       flex-direction: column;
+   }
+   .left{
+       margin-left: 80px;
+   }
+   .title{
+    margin-left: 80px;
+   }
+    .left-container{
+        flex-direction: column;
+        
+    }
+    .cart{
+        margin-top: 20px;
+        margin-left: 80px;
+        
+    }
+   
+}
+@media screen and (max-width:768px){
+    .title{
+       font-size: 10px;
+   }
+    input{
+        width: 200px;
+    }
+    .state-input{
+        width: 80px;
+    }
+    input[type=john-more-doe]{
+        width: 200px;
+    }
+    input[type=card-number]{
+        width: 200px;
+    }
+    input[type=september]{
+        width: 200px;
+    }
+    
+    input[type=exp-input]{
+        width: 80px;
+    }
+    input[type=cvv-input]{
+        width: 80px;
+    }
+    button{
+        width: 200px;
+    }
+}
+@media screen and (max-width:576px){
+    .title{
+        margin-left: 40px;
+        font-size: 10px;
+    }
+    .left{
+        margin-left: 40px;
+    }
+    .cart{
+        margin-top: 20px;
+        margin-left: 40px;
+       
+    }
+} 
