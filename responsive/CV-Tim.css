@@ -459,6 +459,7 @@ li::before{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin-bottom: 2rem
     
 }
 .img:first-child{
@@ -487,5 +488,5 @@ li::before{
     height: 200px;
     object-fit: cover;
     
-    margin-bottom: 2rem
+    
 }
