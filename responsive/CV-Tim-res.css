@@ -3,6 +3,9 @@
     
 }
 @media screen and (max-width: 992px) {
+    .navbar-right>p{
+        margin-left: 60px;
+    }
     .navbar-left{
         grid-column: 1/ span 12;
     }
