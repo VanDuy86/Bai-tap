@@ -73,7 +73,7 @@ body{
     margin-right: 2rem;
     padding: 14px 34px;
     border-radius: 3px;
-
+    cursor: pointer;
 }
 /* author */
 .content{
