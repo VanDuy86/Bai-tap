@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chu Vi</title>
+   
+    
+
+    
+</head>
+<body >
+    <script>
+        // 06 Nhập vào đơn giá của 1 sản phẩm và số lượng của sản phẩm đó. Sau đó tính số tiền khách phải trả, biết rằng cửa hàng đang giảm giá 10%.
+
+        let gia = prompt("Gia San Pham");
+        let soLuong = prompt(" Nhập Số Lượng");
+        let saleOff= 10;
+        let thanhTien = parseInt(gia) * parseInt(soLuong);
+        let khuyenMai = parseInt(thanhTien) * parseInt(saleOff) / 100 ;
+        let tongCong = parseInt(thanhTien) - parseInt(khuyenMai);
+        
+        document.write(" Thanh tien: " + thanhTien + " - Khuyen mai 10% = " + khuyenMai +  "<br>");
+        document.write(" Tong Cong = " + tongCong );
+        
+        
+    </script>
+    
+</body >
+    
+</html>
