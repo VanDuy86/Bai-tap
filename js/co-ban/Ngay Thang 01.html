@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngay Thang</title>
+</head>
+<body>
+    <script>
+        // 02. Nhập vào một số gọi là tháng trong năm. Sau đó in ra màn hình tên tháng đó theo quy tắc (Dùng 02 cách: if-else if và switch):
+        // 1, 2, 3: XUAN
+        // 4, 5, 6: HA
+        // 7, 8, 9: THU
+        // 10, 11, 12: DONG
+
+        // cach 1 . If - Else
+        let thang = prompt ( "Nhập Tháng") ;
+        let ketQua;
+
+        if ( thang <= 0) {
+            ketQua = "Không xác Định"
+        } else if (thang <= 3) {
+            ketQua = "Xuân"
+        } else if (thang <= 6) {
+            ketQua = "Hạ"
+        } else if (thang <= 9) {
+            ketQua = "Thu"
+        }else {
+            ketQua = " Đông"
+        }
+        document.write(ketQua);
+
+        
+    </script>
+</body>
+</html>
