@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngay Thang</title>
+</head>
+<body>
+    <script>
+        // 02. Nhập vào một số gọi là tháng trong năm. Sau đó in ra màn hình tên tháng đó theo quy tắc (Dùng 02 cách: if-else if và switch):
+        // 1, 2, 3: XUAN
+        // 4, 5, 6: HA
+        // 7, 8, 9: THU
+        // 10, 11, 12: DONG
+
+        // Cách 2 Switch
+        let nhapThang = prompt ( "Nhập Tháng") ;
+        let thang = parseInt(nhapThang);
+        let ketQua;
+
+        switch (thang) {
+            // xuân
+            case 1: 
+            case 2: 
+            case 3: 
+            ketQua = "Xuân" ;
+            break;
+            // hạ
+            case 4: 
+            case 5: 
+            case 6: 
+            ketQua = "Hạ" ;
+            break;
+            // Thu
+            case 7: 
+            case 8: 
+            case 9: 
+            ketQua = "Thu" ;
+            break;
+            // Đông
+            case 10: 
+            case 11: 
+            case 12: 
+            ketQua = "Đông" ;
+            break;
+            // khac
+            default: 
+            ketQua = " Không xác Định"
+            break;
+        }
+        document.write (ketQua);
+    </script>
+</body>
+</html>
