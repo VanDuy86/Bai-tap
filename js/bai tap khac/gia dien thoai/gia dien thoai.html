@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+    }
+    .animal{
+      width: 50%;
+      
+    }
+    .animal>img{
+      height: 450px;
+      margin-left: 180px;
+      object-fit: cover;
+    }
+    .thumb {
+      width: 20%;
+      display: flex;
+    }
+    .thumb>img{
+      width: 100%;
+      cursor: pointer;
+    }
+    .btn1{
+      width: 60px;
+      height: 20px;
+      background-color: aqua;
+      cursor: pointer;
+    }
+    .btn2{
+      width: 60px;
+      height: 20px;
+      background-color: aqua;
+      cursor: pointer;
+    }
+    .btn3{
+      width: 60px;
+      height: 20px;
+      background-color: aqua;
+      cursor: pointer;
+    }
+    
+  </style>
+  <script>
+    function init(){
+      let thumb = document.querySelectorAll(".thumb img")
+      for (let i = 0; i<thumb.length; i++){
+        thumb[i].onclick = function(){
+          let images = this.src
+          let mainImg = document.querySelector("#mainImg")
+          mainImg.src = images
+
+        }
+        let button = document.querySelectorAll(".btn a")
+        for ( let i= 0 ; i<button.length; i++){
+          button[i].onclick = function (){
+            event.preventDefault()
+            let mainImg = document.querySelector("#mainImg")
+            let color = this.getAttribute("rel")
+            mainImg.src = `image/Phone/${color}_1.jpg`
+            let subImg = document.querySelectorAll(".thumb img")
+            for(let i=0; i<subImg.length;i++){
+              subImg[i].src = `image/Phone/${color}_${i+1}.jpg`
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body onload="init()">
+  <div class="container">
+    
+    <div class="animal">
+      <img src="image/Phone/animal_1.jpg"  id="mainImg" alt="1">
+      <div class="thumb">
+        <img src="image/Phone/animal_1.jpg" alt="1">
+        <img src="image/Phone/animal_2.jpg" alt="2">
+        <img src="image/Phone/animal_3.jpg" alt="3">
+        <img src="image/Phone/animal_4.jpg" alt="4">
+        <img src="image/Phone/animal_5.jpg" alt="5">
+      </div>
+      
+    </div>
+    <div class="btn">
+      <h1>asdasdasd</h1>
+      <a href="#" rel="animal">  <img  src="image/button/btn1.jpg" alt=""></a>
+      <a href="#" rel="nature"><img  src="image/button/btn2.jpg" alt=""></a>
+      <a href="#" rel="people"><img  src="image/button/btn3.jpg" alt=""></a>
+    </div>
+  </div>
+</body>
+</html>
