@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tien Dien</title>
+</head>
+<body >
+    <script>
+        
+        
+        const tong = []
+        for (i =0; i<1; i++){
+            let x = prompt("nhap so dien")
+            tong.push(parseInt(x))
+        }
+        let y = tong[0]
+        for (i=0; i<tong.length; i++){
+            if (y <= 100){
+                y = 550 * tong[i]
+                document.write(y) // Nếu chữ điện từ 100 trở xuống thì số tiền phải trả là 550 đồng/chữ.
+            }
+            if (100< y && y<= 150){
+                y = ( ( tong[i] - 100 ) *900 ) +55000
+                document.write(y) //  50 chữ điện tiếp theo giá 900 đồng/chữ   
+            }else if(150<y && y<= 200){
+                y = ( ( tong[i] - 150 ) *1210 ) +100000
+                document.write(y) // 50 chữ tiếp theo giá 1210 đồng/ chữ 
+            }else if(200<y && y<= 300){
+                y = ( ( tong[i] - 200 ) *1340 ) + 160500
+                document.write(y) // 100 chữ điện tiếp theo giá 1340 đồng/ chữ
+             }else if(300<y && y>=300){
+                y = ( ( tong[i] - 300 ) *1400 ) + 294500
+                document.write(y) //Từ chữ thứ 301 trở đi gia 1400 đồng/ chữ
+            }
+             
+        }   
+        
+    </script>
+</body>
+</html>
