@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        margin: 200px 600px;
+        width: 500px;
+    }
+    label {
+        display:block;
+        /* margin-bottom: 5px; */
+    }
+    input{
+        margin-bottom: 10px;
+    }
+    
+</style>
+
+<body>
+    <div class="form">
+        <form >
+            <div class="input">
+                <label for=""> usename</label>
+            <input type="text" name="usename" id="usename" placeholder="Type usename">
+            <label for=""> password</label>
+            <input type="password" name="password" id="password" placeholder="Type password">
+            </div>
+            
+             <div class="gender">
+                <input type="radio" name="gender" id="Male">Male
+                <input type="radio" name="gender" id="Female">Female
+             </div>   
+                
+           
+            <div class="checkbox">
+                <span>Favorite:</span>
+                <input type="checkbox" value="Java">Java
+                <input type="checkbox" value="Javascript">Javascript
+                <input type="checkbox" value="Python">Python
+            </div>
+            
+        </form>
+        <div class="confirm">
+            <button onclick="login()">Submit</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        
+        
+    </div>
+</body>
+<script>
+    function login(){
+        let login = document.querySelectorAll("input");
+        let usename = login[0]
+        let password = login[1]
+        let gender1 = login[2].checked 
+        let gender2 = login[3].checked 
+        let favorite1 = login[4].checked
+        let favorite2 = login[5].checked
+        let favorite3 = login[6].checked
+        
+        if(usename.value == "" || password.value == ""){
+            alert(" please fill out field")
+            return
+        }
+        if( isFinite(usename.value) ){
+            alert(" usename must be character ")
+            return
+        }
+        if (usename.value.length < 6 ){
+            alert ("usename must be 6 character")
+            return
+        }
+        if( isNaN(password.value) ){
+            alert(" Password must be number")
+            return
+        }
+        if (password.value.length < 8 ){
+            alert ("password must be 8 character")
+            return
+        }
+        if (gender1 || gender2){
+            
+        }else{
+            alert ("gender must be choose")
+            return
+        }   
+        if(gender1){
+            gender = "Male"
+        } else {
+            gender = "Female"
+        }
+        if(favorite1 || favorite2 || favorite3){
+
+        }else{
+            alert ("Favorite must be choose")
+            return
+        }
+        for(i=4;i<=6;i++){
+            if(login[i].checked){
+                favorite = login[i].value
+            }
+        }
+        
+       let choice = confirm(`success \n usename: ${usename.value} \n password: ${password.value} \n gender: ${gender}\nfavorite: ${favorite}`)  
+       if (choice ==1){
+           alert("success")
+       }  
+        
+               
+    }
+    function reset(){
+        document.querySelector("form").reset()
+    }
+</script>
+</html>
