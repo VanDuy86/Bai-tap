@@ -43,12 +43,12 @@
                 <input type="checkbox" value="Javascript">Javascript
                 <input type="checkbox" value="Python">Python
             </div>
-            
         </form>
         <div class="confirm">
             <button onclick="login()">Submit</button>
             <button onclick="reset()">Reset</button>
         </div>
+        
         
         
     </div>
@@ -101,21 +101,37 @@
             alert ("Favorite must be choose")
             return
         }
-        for(i=4;i<=6;i++){
-            if(login[i].checked){
-                favorite = login[i].value
-            }
+        if(favorite1){
+            favorite = "Java "
+        }else{
+            favorite =  " javascript"
+        }
+        if(favorite3){
+            favorite = "Python "
+        }
+        if (favorite1 && favorite2){
+            favorite = "Java " + " javascript"
+        }if(favorite1 && favorite3){
+            favorite = "Java " + " Python"
+        }
+        if (favorite2 && favorite3){
+            favorite = "javascript " + " Python"
         }
         
-       let choice = confirm(`success \n usename: ${usename.value} \n password: ${password.value} \n gender: ${gender}\nfavorite: ${favorite}`)  
-       if (choice ==1){
-           alert("success")
-       }  
         
+        if(favorite1 && favorite2 && favorite3){
+            favorite = "Java " + " javascript" + " Python"
+        }
+        
+        let choice = confirm(`usename: ${usename.value} \n password: ${password.value} \n gender: ${gender}\nfavorite: ${favorite}`)  
+        if (choice ==1){
+            alert("success")
+        }  
+        function reset (){
+            let reset = document.querySelector("form").reset()
+        }
                
     }
-    function reset(){
-        document.querySelector("form").reset()
-    }
+    
 </script>
 </html>
