@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <title>boostrap-bt08</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        .top-img img{
+            object-fit: cover;
+            height: 350px;
+            width: 100%;
+        }
+        
+        .btn:focus{
+            border-bottom: 2px solid salmon;
+            box-shadow: none;
+        }
+        h3{
+            font-size: 16px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 14px;
+        }
+        .video{
+            margin-top: -160px;
+            border: 5px solid white;
+            
+        }
+        .video iframe{
+            width: 300px;
+            height: 150px;
+        }
+        @media screen and (max-width:992px) {
+        .video{
+            margin-top: 0;
+            
+        }
+        .right{
+            margin-left: 50px;
+        }
+       }
+       @media screen and (max-width:767px) {
+        .video{
+            margin-top: 0;
+            
+        }
+        .right{
+            margin-left: 50px;
+        }
+       }
+       .add-to-card{
+           padding: 12px;
+            background-color: rgb(243, 65, 65);
+            color: white;
+       }
+       .buy-now{
+           color: black;
+           border: 1px solid black;
+       }
+       .buy-now i{
+           margin-left: -12px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container ">
+        <div class="row mt-4">
+            <div class="col-12 col-md-12 ">
+                <div class="top-img">
+                    <img class="img-fluid " src="https://cdn.pixabay.com/photo/2014/05/02/21/49/laptop-336373_960_720.jpg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- ----------left column--------------- -->
+            <div class="col-md-12 col-lg-8 col-12">
+                <div class="left">
+                    <div class="button mb-4 mt-2 bg-light">
+                        <button class="btn rounded-0 fw-bold" data-bs-toggle="collapse" data-bs-target="#overview" >Overview</button>
+                        <button class="btn rounded-0 fw-bold" data-bs-toggle="collapse" data-bs-target="#curriculum" >Curriculum</button>
+                        <button class="btn rounded-0 fw-bold" data-bs-toggle="collapse" data-bs-target="#lnstructor" >lnstructor</button>
+                        <button class="btn rounded-0 fw-bold" data-bs-toggle="collapse" data-bs-target="#review" >Review</button>
+                    </div>
+                    <div class="description collapse  mb-2" id="overview">
+                        <h3>Overview Description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam vitae eum doloribus fugit sit quis mollitia sequi unde tenetur odit hic velit facere assumenda excepturi veniam, atque temporibus officiis!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae enim itaque rerum, earum sapiente velit ullam dicta repellat non quas totam animi inventore recusandae in doloremque nihil tempore iste.</p>
+                        <h3>Certification</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo eligendi quisquam aliquam exercitationem. Cupiditate tempora, sunt nam in, deleniti maxime reiciendis similique, cum quibusdam nostrum optio iusto doloribus adipisci.</p>
+                        <h3>Who this course is for</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates assumenda accusamus magnam maiores quidem et ducimus rerum error illo modi vitae magni perspiciatis officia distinctio, quibusdam veniam. Voluptatum, excepturi!</p>
+                    </div>
+                    <div class="description collapse mb-2" id="curriculum">
+                        <h3>Curriculum Description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam vitae eum doloribus fugit sit quis mollitia sequi unde tenetur odit hic velit facere assumenda excepturi veniam, atque temporibus officiis!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae enim itaque rerum, earum sapiente velit ullam dicta repellat non quas totam animi inventore recusandae in doloremque nihil tempore iste.</p>
+                        <h3>Curriculum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo eligendi quisquam aliquam exercitationem. Cupiditate tempora, sunt nam in, deleniti maxime reiciendis similique, cum quibusdam nostrum optio iusto doloribus adipisci.</p>
+                        <h3>Curriculum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates assumenda accusamus magnam maiores quidem et ducimus rerum error illo modi vitae magni perspiciatis officia distinctio, quibusdam veniam. Voluptatum, excepturi!</p>
+                    </div>
+                    <div class="description collapse mb-2" id="lnstructor">
+                        <h3>lnstructor Description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam vitae eum doloribus fugit sit quis mollitia sequi unde tenetur odit hic velit facere assumenda excepturi veniam, atque temporibus officiis!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae enim itaque rerum, earum sapiente velit ullam dicta repellat non quas totam animi inventore recusandae in doloremque nihil tempore iste.</p>
+                        <h3>lnstructor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo eligendi quisquam aliquam exercitationem. Cupiditate tempora, sunt nam in, deleniti maxime reiciendis similique, cum quibusdam nostrum optio iusto doloribus adipisci.</p>
+                        <h3>lnstructor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates assumenda accusamus magnam maiores quidem et ducimus rerum error illo modi vitae magni perspiciatis officia distinctio, quibusdam veniam. Voluptatum, excepturi!</p>
+                    </div>
+                    <div class="description collapse mb-2" id="review">
+                        <h3>review Description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam vitae eum doloribus fugit sit quis mollitia sequi unde tenetur odit hic velit facere assumenda excepturi veniam, atque temporibus officiis!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius beatae enim itaque rerum, earum sapiente velit ullam dicta repellat non quas totam animi inventore recusandae in doloremque nihil tempore iste.</p>
+                        <h3>review</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo eligendi quisquam aliquam exercitationem. Cupiditate tempora, sunt nam in, deleniti maxime reiciendis similique, cum quibusdam nostrum optio iusto doloribus adipisci.</p>
+                        <h3>review</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates assumenda accusamus magnam maiores quidem et ducimus rerum error illo modi vitae magni perspiciatis officia distinctio, quibusdam veniam. Voluptatum, excepturi!</p>
+                    </div>
+                </div>
+            </div>    
+            <!-- ----------end left column--------------- --> 
+            <!-- ----------right column--------------- -->
+            <div class="col-md-12 col-lg-4 col-12 ">
+                <div class="right" >
+                    <div class="video me-5 ">
+                        <div>
+                            <iframe class="w-100 " src="https://www.youtube.com/embed/XTcYxQtjTng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="Price d-flex justify-content-between mt-3 border-bottom">
+                            <div class="d-flex">
+                                <i style="color:rgb(243, 65, 65);" class="bi bi-tag"></i>
+                                <p class="fw-bold ms-2">Price</p>
+                            </div>
+                            <span style="color: rgb(243, 65, 65);" class="fw-bold" >$49</span>
+                        </div>
+                        <div class="Price d-flex justify-content-between mt-3 border-bottom">
+                            <div class="d-flex">
+                                <i style="color:rgb(243, 65, 65);" class="bi bi-person-badge-fill"></i>
+                                <p class="fw-bold ms-2">lnstructor</p>
+                            </div>
+                            <span style="font-size: 14px;" style="color: gray;" >Sahar Talor</span>
+                        </div>
+                        <div class="Price d-flex justify-content-between mt-3 border-bottom">
+                            <div class="d-flex">
+                                <i style="color:rgb(243, 65, 65);" class="bi bi-person-badge-fill"></i>
+                                <p class="fw-bold ms-2">Duration</p>
+                            </div>
+                            <span style="font-size: 14px;" style="color: gray;" >7 Weeks</span>
+                        </div>
+                        <div class="Price d-flex justify-content-between mt-3 border-bottom">
+                            <div class="d-flex">
+                                <i style="color:rgb(243, 65, 65);" class="bi bi-journal-bookmark"></i>
+                                <p class="fw-bold ms-2">Lession</p>
+                            </div>
+                            <span style="font-size: 14px;" style="color: gray;" >25</span>
+                        </div>
+                        <div class="Price d-flex justify-content-between mt-3 border-bottom">
+                            <div class="d-flex">
+                                <i style="color:rgb(243, 65, 65);" class="bi bi-calendar3"></i>
+                                <p class="fw-bold ms-2">Enrolled</p>
+                            </div>
+                            <span style="font-size: 14px;" style="color: gray;" >255 Students</span>
+                        </div>
+                        <div class="Price d-flex justify-content-between mt-3 border-bottom">
+                            <div class="d-flex">
+                                <i style="color:rgb(243, 65, 65);" class="bi bi-gear-wide-connected"></i>
+                                <p class="fw-bold ms-2">Access</p>
+                            </div>
+                            <span style="font-size: 14px;" style="color: gray;" >Life times</span>
+                        </div>
+                        <div class="btn w-100 add-to-card mt-4 ">
+                            <i style="color:white;" class="bi bi-cart me-2"></i>
+                            <span>Add to card</span>
+                        </div>
+                        <div class="btn w-100 buy-now mt-4 ">
+                            <i style="color:black;" class="bi bi-wallet2 me-2"></i>
+                            <span>Buy Now</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>   
+            <!-- ----------end right column--------------- -->
+                  
+            
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
