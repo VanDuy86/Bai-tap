@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    
+    <!-- ---------------js--------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>boostrap-bt09</title>
+    
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'roboto', sans-serif;
+      }
+      a{
+        text-decoration: none;
+        color: black !important;
+      }
+      img{
+        object-fit: cover;
+      }
+      .btn:focus{
+        box-shadow: none;
+      }
+      /* navbar */
+      .input-group{
+        width: 230px;
+        height: 30px;
+      }
+      .form-control:focus{
+        box-shadow: none;
+        background-color: rgb(236, 236, 236);
+        border: none;
+      }
+      .bi-search{
+        margin-left: -55px;
+        pointer-events: none;
+      }
+      .navbar-toggler-icon:focus{
+        border: none !important;
+      }
+      /* content 1 */
+      .top-list{
+        background-color: #EAEAEA;
+        height: 54px;
+      }
+      .thoi-trang{
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .list-meunu-border-bottom{
+        width: 95%;
+      }
+      .carousel-item{
+       height: 440px;
+     }
+     .carousel-item img{
+       height: 100% !important;
+     }
+     .khuyen-mai h3{
+       font-size: 16px;
+       text-align: center;
+     }
+     .khuyen-mai-border-bottom{
+      border-bottom: 1px solid rgb(230, 228, 228);
+      position: relative;
+      width: 88%;
+      margin-left: 15px;
+     }
+     .khuyen-mai-border-bottom::before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 10px;
+
+        top: -13px;
+        left: 51%;
+        transform: translateX(-50%);
+          
+        border-bottom: 7px solid rgb(230, 228, 228);
+        border-top: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+      }
+      
+      
+      .khuyen-mai-text span{
+        font-size: 14px;
+        font-weight: 500;
+      }
+      /* content 2 */
+     
+      .uu-dai-border-bottom{
+        border-bottom: 1px solid rgb(230, 228, 228);
+      position: relative;
+      width: 95%;
+      margin-left: 15px;
+      }
+      .uu-dai-border-bottom::before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 10px;
+
+        top: -13px;
+        left: 48%;
+          
+        border-bottom: 7px solid rgb(230, 228, 228);
+        border-top: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+      }
+      .uu-dai-img{
+        position: relative;
+      }
+      .uu-dai-img p{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #F23434;
+        padding: 6px;
+        font-size: 12px;
+        color: white;
+      }
+      .ngay{
+        background-color: gray;
+        height: 65px;
+        color: white;
+
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        padding: 2px 14px 2px 20px;
+        margin-left: 220px;
+        
+      }
+      .ngay p{
+        font-size: 12px;
+        margin-top: -10px;
+        margin-left: -5px;
+      }
+      .gio{
+        border: 1px solid rgb(199, 198, 198);
+        height: 65px;
+
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        padding: 2px 10px;
+      }
+      .gio p{
+        font-size: 12px;
+        margin-top: -10px;
+        margin-left: 8px;
+      }
+      .dang-ky h3{
+       font-size: 18px;
+       text-align: center;
+     }
+     .dang-ky button{
+       color: black;
+       border: 2px solid rgb(221, 220, 220) ;
+       padding: 6px 16px;
+     }
+     .dang-ky button:hover{
+       background-color: #8fa4df;
+       transition: 0.3s linear;
+     }
+     @media screen and (max-width: 1199px) {
+        .uu-dai-border-bottom{
+            width: 93%;
+        }
+        
+         .uu-dai-text{
+             flex-direction: column !important;
+         }
+        .ngay{
+            margin-left: 160px;
+        }
+        .giam-gia{
+          left: -120%;
+        }
+        
+       
+      }
+      @media screen and (max-width: 991px) {
+        .uu-dai-border-bottom{
+            width: 96%;
+        }
+        .uu-dai-border-bottom::before{
+            left: 48.5%;
+        }
+        .ngay{
+            margin-left: 130px;
+        }
+        /* .input-group{
+          width: 80%;
+          height: 30px;
+          margin: auto;
+        } */
+        
+       
+      }
+      @media screen and (max-width: 768px) {
+       
+        .banner-left {
+        width: 80%;
+        margin: 20px auto;
+      }
+        .khuyen-mai-border-bottom{
+            width: 96%;
+        }
+        
+        .ngay{
+            margin-left: 220px;
+        }
+       
+       
+      }
+    @media screen and (max-width: 500px){
+      
+        .khuyen-mai-border-bottom{
+            width: 92%;
+        }
+        .uu-dai-border-bottom{
+            width: 91%;
+        }
+        
+        .ngay{
+            margin-left: 0;
+        }
+        .carousel{
+            /* width: 90%; */
+        }
+       
+        .dang-ky{
+            width: 90%;
+        }
+        
+    }
+      
+    </style>
+  </head>
+  <body>
+    <!-- ------------------------navbar ----------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container mb-4">
+        <a class="navbar-brand" href="">
+          <img class="img-fluid w-100" src="http://runecom01.runtime.vn/Uploads/shop910/images/logo.png" alt="">
+        </a>
+        <button class="btn navbar-toggler" data-bs-target="#navbarID" data-bs-toggle="collapse">
+          <span><i class="navbar-toggler-icon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarID">
+          <ul class="navbar-nav ms-auto text-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navdropdown" data-bs-toggle="dropdown" href="#">SẢN PHẨM</a>
+              <ul class="dropdown-menu" aria-labelledby="navdropdown">
+                <li><a class="dropdown-item" href="">Sub menu</a></li>
+                <li><a class="dropdown-item" href="">Sub menu</a></li>
+                <li><a class="dropdown-item" href="">Sub menu</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TIN TỨC</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link" href="#">LIÊN HỆ</a>
+            </li>
+          </ul>
+          <form class="form-search d-flex input-group ms-lg-3 mb-md-2 mt-md-0 mt-0">
+            <input class="form-control " type="search" placeholder="Tìm kiếm...." >
+            <button class="btn ">
+              <i class="bi-search"></i>
+            </button>
+          </form>
+        </div>
+        
+        
+      </div>
+    </nav>
+    <!-- ----------------content 1-------------------- -->
+    <section>
+      <div class="container mt-4">
+        <div class="row">
+          <!-- -------------col-left---------------------- -->
+          <div class="col-lg-3 mt-4  m-0">
+            <div class="col-left border p-0 ">
+              <div class="top-list px-3 d-flex align-items-center">
+                <span><i class="fas fa-list-ul"></i></span>
+                <span class="fw-bold ms-3">DANH MỤC</span>
+              </div>
+              <div class="list-meunu mt-4 ms-3">
+                <!-- -------------thoi trang---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between ">
+                    <div class="thoi-trang-left">
+                      <i class="fa fa-female me-4"></i>
+                      <span> Thời Trang</span>
+                    </div>
+                    <div class="thoi-trang-right me-3">
+                      <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class=" list-meunu-border-bottom  border-bottom mb-3 mt-3 "></div>
+                <!-- -------------thuc pham---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between mt-1">
+                  <div class="thoi-trang-left">
+                    <i class="fa fa-cutlery me-4"></i>
+                    <span> Thực phẩm</span>
+                  </div>
+                  <div class="thoi-trang-right me-3">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="list-meunu-border-bottom border-bottom mb-3 mt-3"></div>
+                <!-- -------------Dien tu---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between mt-1">
+                  <div class="thoi-trang-left">
+                    <i class="fa fa-camera me-4"></i>
+                    <span> Điện tử</span>
+                  </div>
+                  <div class="thoi-trang-right me-3">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="list-meunu-border-bottom border-bottom mb-3 mt-3"></div>
+                <!-- -------------Noi that---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between mt-1">
+                  <div class="thoi-trang-left">
+                    <i class="fa fa-suitcase me-4"></i>
+                    <span> Nội thất</span>
+                  </div>
+                  <div class="thoi-trang-right me-3">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="list-meunu-border-bottom border-bottom mb-3 mt-3"></div>
+                <!-- -------------Nu trang---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between mt-1">
+                  <div class="thoi-trang-left">
+                    <i class="far fa-heart me-4"></i>
+                    <span> Nữ Trang</span>
+                  </div>
+                  <div class="thoi-trang-right me-3">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="list-meunu-border-bottom border-bottom mb-3 mt-3"></div>
+                <!-- -------------My pham---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between mt-1">
+                  <div class="thoi-trang-left">
+                    <i class="fa fa-heart me-4"></i>
+                    <span> Mỹ Phẩm</span>
+                  </div>
+                  <div class="thoi-trang-right me-3">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <div class="list-meunu-border-bottom border-bottom mb-3 mt-3"></div>
+                <!-- -------------Qua tang---------------------- -->
+                <div class="thoi-trang d-flex justify-content-between mt-1 mb-3">
+                  <div class="thoi-trang-left">
+                    <i class="fa fa-puzzle-piece me-4"></i>
+                    <span> Quà Tặng</span>
+                  </div>
+                  <div class="thoi-trang-right me-3">
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------col-middle---------------------- -->
+          <div class="col-middle col-lg-6 mt-4  m-0">
+            <div class="slides ms-1 ">
+              <div class="carousel slide " data-bs-ride="carousel" id="carousel01">
+                <div class="carousel-indicators">
+                  <button data-bs-slide-to="0" class="active" data-bs-target="#carousel01"></button>
+                  <button data-bs-slide-to="1" data-bs-target="#carousel01"></button>
+                  <button data-bs-slide-to="2" data-bs-target="#carousel01"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active ">
+                    <img class="w-100 " src="https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="w-100 " src="https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="w-100 " src="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------col-right---------------------- -->
+          <div class="col-right col-lg-3 mt-4  m-0">
+            <div class="khuyen-mai ms-xl-2 ms-0 border">
+              <h3 class="mb-4 mt-4">SẢN PHẨM KHUYẾN MÃI</h3>
+              <div class="khuyen-mai-border-bottom"></div>
+                <!-- ----------SẢN PHẨM KHUYẾN MÃI 1-------------------- -->
+              <div class="d-flex mt-4 ">
+                <img class="img-fluid w-25 ms-3 " src="https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                <div class="khuyen-mai-text w-100 ms-3 ">
+                  <p class="mb-0 ">Áo thun nữ Belike</p>
+                  <span class="text-decoration-line-through">200.000đ</span>
+                  <span style="color: #6E86CA;" class="ms-2">95.200đ</span>
+                </div>
+              </div>
+              <div class="border-bottom mt-4 ms-3 me-3"></div>
+                <!-- ----------SẢN PHẨM KHUYẾN MÃI 2-------------------- -->
+                <div class="d-flex mt-4 ">
+                  <img class="img-fluid w-25 ms-3 " src="https://images.pexels.com/photos/1144834/pexels-photo-1144834.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                  <div class="khuyen-mai-text w-100 ms-3 ">
+                    <p class="mb-0 ">Bikini bi áo lửng</p>
+                    <span class="text-decoration-line-through">200.000đ</span>6
+                    <span style="color: #6E86CA;" class="ms-2">450.000đ</span>
+                  </div>
+                </div>
+                <div class="border-bottom mt-4 ms-3 me-3"></div>
+                <!-- ----------SẢN PHẨM KHUYẾN MÃI 3-------------------- -->
+                <div class="d-flex mt-4 ">
+                  <img class="img-fluid w-25 ms-3 " src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                  <div class="khuyen-mai-text w-100 ms-3 ">
+                    <p class="mb-0 ">Son môi Itachi</p>
+                    <span class="text-decoration-line-through">600.000đ</span>6
+                    <span style="color: #6E86CA;" class="ms-2">500.000đ</span>
+                  </div>
+                </div>
+                <div class="border-bottom mt-4 ms-3 me-3"></div>
+                <!-- ----------SẢN PHẨM KHUYẾN MÃI 4-------------------- -->
+                <div class="d-flex mt-4 ">
+                  <img class="img-fluid w-25 ms-3 " src="https://images.pexels.com/photos/247204/pexels-photo-247204.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                  <div class="khuyen-mai-text w-100 ms-3 ">
+                    <p class="mb-0 ">Mascara dầy và cong</p>
+                    <span class="text-decoration-line-through">100.000đ</span>6
+                    <span style="color: #6E86CA;" class="ms-2">50.000đ</span>
+                  </div>
+                </div>
+                <div class="border-bottom mt-4 ms-3 me-3 mb-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------content 2-------------------- -->
+    <section>
+      <div class="container">
+        <div class="row ">
+          <!-- ----------------content 2 left-------------------- -->
+          <div class="col-lg-3 m-lg-0">
+            <div class="banner-left ">
+              <div class="banner-left-1 mb-4">
+                <img class="w-100 img-fluid" src="https://images.pexels.com/photos/5625131/pexels-photo-5625131.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+              <div class="banner-left-2">
+                <img class="w-100 img-fluid" src="https://images.pexels.com/photos/9595294/pexels-photo-9595294.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- ----------------content 2 middle-------------------- -->
+          <div class="col-lg-6 m-lg-0">
+            <div class="uu-dai border ms-sm-1 ms-0">
+              <h3 class="text-center mt-4">ƯU ĐÃl LỚN</h3>
+              <div class="uu-dai-border-bottom mt-3 mb-4"></div>
+              <!-- -----------uu-dai-content---------------- -->
+              <div class="uu-dai-content ">
+                <div class="uu-dai-text"> 
+                  <div class="d-md-flex flex-md-column flex-lg-row d-flex flex-column mt-4 uu-dai-text">
+                    <div class="uu-dai-img ms-xl-3 ms-0">
+                      <img class="img-fluid w-100" src="https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                      <p>-52%</p>
+                    </div>
+                    <div class="khuyen-mai-text w-100 ms-3 mt-xl-0 mt-4 ">
+                      <p class="mb-0 fs-5">Áo thun nữ Belike</p>
+                      <span class="text-decoration-line-through fs-4">200.000đ</span>
+                      <span style="color: #6E86CA;" class="ms-2 fs-4">95.200đ</span>
+                      <p style="color: gray; font-size: 14px;" class="me-3 khuyen-mai-des">Trẻ trung và cuốn hút theo phong cách đường phố thu-đông với áo nỉ thêu hình động vật của thương hiệu Asos.- Chất liệu cotton pha- Cổ 3cm- Tay dài, suông- Không lót trong- Màu sắc: XámHướng dẫn sử dụng:- Giặt bằng tay với nhiệt độ không quá 30°C- Không được tẩy- Không được sấy khô- Ủi với nhiệt độ...</p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- ------------calendar--------------- -->
+                <div class="calender d-flex justify-content-center mt-4 mb-4">
+                  <div class="ngay ">
+                    <span class="fw-bold fs-2">0</span>
+                    <p >NGÀY</p>
+                  </div>
+                  <div class="gio ms-2">
+                    <span class="fw-bold fs-2">00</span>
+                    <p >Giờ</p>
+                  </div>
+                  <div class="gio ms-2">
+                    <span class="fw-bold fs-2">00</span>
+                    <p >Phút</p>
+                  </div>
+                  <div class="gio ms-2">
+                    <span class="fw-bold fs-2">00</span>
+                    <p >Giây</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------content 2 right-------------------- -->
+          <div class="col-lg-3 m-lg-0">
+            <div class="dang-ky mt-4 border ms-sm-2 ms-3">
+              <form class="mt-4 d-flex flex-column align-items-center">
+                <h3 class="mb-3">Đăng Ký Nhận Tin</h3>
+                <input class="form-control w-75 m-auto" type="email" >
+                <button class="btn mt-3 mb-4 w-50" >Đăng Ký</button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="banner mt-5 mb-5">
+                <img class="img-fluid w-100" src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
