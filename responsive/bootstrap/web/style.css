@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'roboto', sans-serif;
+      }
+      a{
+        text-decoration: none;
+        color: black !important;
+      }
+      img{
+        object-fit: cover;
+      }
+      .btn:focus{
+        box-shadow: none;
+      }
+      /* navbar */
+      .input-group{
+        width: 230px;
+        height: 30px;
+      }
+      .form-control:focus{
+        box-shadow: none;
+        background-color: rgb(236, 236, 236);
+        border: none;
+      }
+      .bi-search{
+        margin-left: -55px;
+        pointer-events: none;
+      }
+      .navbar-toggler-icon:focus{
+        border: none !important;
+      }
+      /* content 1 */
+      .top-list{
+        background-color: #EAEAEA;
+        height: 54px;
+      }
+      .thoi-trang{
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .list-meunu-border-bottom{
+        width: 95%;
+      }
+      .carousel-item{
+       height: 440px;
+     }
+     .carousel-item img{
+       height: 100% !important;
+     }
+     .khuyen-mai h3{
+       font-size: 16px;
+       text-align: center;
+     }
+     .khuyen-mai-border-bottom{
+      border-bottom: 1px solid rgb(230, 228, 228);
+      position: relative;
+      width: 88%;
+      margin-left: 15px;
+     }
+     .khuyen-mai-border-bottom::before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 10px;
+
+        top: -13px;
+        left: 51%;
+        transform: translateX(-50%);
+          
+        border-bottom: 7px solid rgb(230, 228, 228);
+        border-top: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+      }
+      
+      
+      .khuyen-mai-text span{
+        font-size: 14px;
+        font-weight: 500;
+      }
+      /* content 2 */
+      .banner-left{
+        margin-top: -90px;
+      }
+      .uu-dai{
+        margin-top: -90px;
+      }
+      .uu-dai-border-bottom{
+        border-bottom: 1px solid rgb(230, 228, 228);
+      position: relative;
+      width: 95%;
+      margin-left: 15px;
+      }
+      .uu-dai-border-bottom::before{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 10px;
+
+        top: -13px;
+        left: 48%;
+          
+        border-bottom: 7px solid rgb(230, 228, 228);
+        border-top: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+      }
+      .uu-dai-img{
+        position: relative;
+      }
+      .uu-dai-img p{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #F23434;
+        padding: 6px;
+        font-size: 12px;
+        color: white;
+      }
+      .ngay{
+        background-color: gray;
+        height: 65px;
+        color: white;
+
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        padding: 2px 14px 2px 20px;
+        margin-left: 220px;
+        
+      }
+      .ngay p{
+        font-size: 12px;
+        margin-top: -10px;
+        margin-left: -5px;
+      }
+      .gio{
+        border: 1px solid rgb(199, 198, 198);
+        height: 65px;
+
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        padding: 2px 10px;
+      }
+      .gio p{
+        font-size: 12px;
+        margin-top: -10px;
+        margin-left: 8px;
+      }
+      .dang-ky h3{
+       font-size: 18px;
+       text-align: center;
+     }
+     .dang-ky button{
+       color: black;
+       border: 2px solid rgb(221, 220, 220) ;
+       padding: 6px 16px;
+     }
+     .dang-ky button:hover{
+       background-color: #8fa4df;
+       transition: 0.3s linear;
+     }
+     @media screen and (max-width: 1199px) {
+        .uu-dai-border-bottom{
+            width: 93%;
+        }
+        
+         .uu-dai-text{
+             flex-direction: column !important;
+         }
+        .ngay{
+            margin-left: 160px;
+        }
+        .giam-gia{
+          left: -120%;
+        }
+        .banner-left{
+          margin-top: -100px;
+        
+        }
+        .uu-dai{
+          margin-top: -100px;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        .uu-dai-border-bottom{
+            width: 96%;
+        }
+        .uu-dai-border-bottom::before{
+            left: 48.5%;
+        }
+        .ngay{
+            margin-left: 130px;
+        }
+        .input-group{
+          width: 80%;
+          height: 30px;
+          margin: auto;
+        }
+        .banner-left{
+          margin-top: 40px;
+          margin-left: 180px;
+          width: 50%;
+        
+        }
+        .uu-dai{
+          margin-top: 40px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .khuyen-mai-border-bottom{
+            width: 96%;
+        }
+        
+        .ngay{
+            margin-left: 220px;
+        }
+        .banner-left{
+          margin-top: 40px;
+          margin-left: 150px;
+          width: 50%;
+        
+        }
+        .uu-dai{
+          margin-top: 40px;
+        }
+      }
+    @media screen and (max-width: 500px){
+        .khuyen-mai-border-bottom{
+            width: 92%;
+        }
+        .uu-dai-border-bottom{
+            width: 91%;
+        }
+        
+        .ngay{
+            margin-left: 0;
+        }
+        .khuyen-mai{
+            margin-left: 0;
+        }
+        .banner-left{
+            margin-top: 40px;
+            margin-left: 80px;
+            width: 50%;
+          
+          }
+        .carousel{
+            display: none;
+        }
+       
+        .dang-ky{
+            width: 90%;
+        }
+        
+    }
