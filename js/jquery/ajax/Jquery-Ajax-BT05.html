@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    
+    <!-- ---------------js--------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+    <title>Jquery-Ajax-BT05</title>
+    
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'roboto', sans-serif;
+      }
+      .food-img img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .food-content >h3{
+        font-size: 18px;
+        
+      }
+      .food-content >span{
+        font-size: 14px;
+        color: gray;
+      }
+      .food-content >p{
+        font-size: 20px;
+      }
+      .bg-success{
+        width: 430px;
+        background-color: #F5F5F8 !important;
+      }
+      .right >div >span{
+        font-size: 12px;
+        color: gray;
+      }
+      .right >p {
+        font-size: 12px;
+        color: gray;
+      }
+      .shadow-lg{
+        box-shadow: 1rem 1rem 3rem rgba(245, 245, 248, 0.518)!important;
+    
+    }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div id="row" class="row">
+        <!-- <div class="col-12">
+              <div class="left d-flex m-auto bg-success rounded rounded-3 justify-content-between mb-4">
+                <div class="food-img d-flex p-2 mt-2 ms-2 ">
+                  <img src="https://images.unsplash.com/photo-1628191013647-5640e14ded54?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                  <div class="food-content p-2 ">
+                    <h3 class="mb-0 mt-1">Hot tacos</h3>
+                    <span>India Vegetable</span>
+                    <p class="fw-bold">$10.99</p>
+                  </div>
+                </div>
+                <div class="right d-flex flex-column me-4 mt-3 h-25 ">
+                  <div class="d-flex shadow-lg">
+                    <i style="color: #FB4921;" class="fab fa-gripfire mt-1"></i>
+                    <span >78 calories</span>
+                  </div>
+                  <p class="mt-3">ID:</p>
+                </div>
+              </div>
+        </div>
+      </div> -->
+    </div>
+   <script>
+     $(document).ready(function(){
+        // $.get("https://training.softech.cloud/api/products/popular", function(data){
+        //   data.products.forEach(detail => {
+        //     $('#row').append(
+        //       `
+        //       <div class="col-12">
+        //         <div class="left d-flex m-auto bg-success rounded rounded-3 justify-content-between mb-4">
+        //           <div class="food-img d-flex p-2 mt-2 ms-2 ">
+        //             <img src=${detail.imageUrl} alt="">
+        //             <div class="food-content p-2 ">
+        //               <h3 class="mb-0 mt-1">${detail.name}</h3>
+        //               <span>${detail.description}</span>
+        //               <p class="fw-bold">$${detail.price}</p>
+        //             </div>
+        //           </div>
+        //           <div class="right d-flex flex-column me-4 mt-3 h-25 ">
+        //             <div class="d-flex shadow-lg">
+        //               <i style="color: #FB4921;" class="fab fa-gripfire mt-1"></i>
+        //               <span >${detail.calories} calories</span>
+        //             </div>
+        //             <p class="mt-3">ID:${detail.id}</p>
+        //           </div>
+        //         </div>
+        //       </div>
+              
+        //       `
+        //     )
+          
+        //   });
+        // });
+        // -------------------ajax----------------------------------------------
+         $.ajax({
+          method:"GET",
+          url:"https://training.softech.cloud/api/products/popular",
+          success: function(data) {
+            data.products.forEach(detail => {
+              $('#row').append(
+                `
+                <div class="col-12">
+                 <div class="left d-flex m-auto bg-success rounded rounded-3 justify-content-between mb-4">
+                   <div class="food-img d-flex p-2 mt-2 ms-2 ">
+                     <img src=${detail.imageUrl} alt="">
+                     <div class="food-content p-2 ">
+                       <h3 class="mb-0 mt-1">${detail.name}</h3>
+                       <span>${detail.description}</span>
+                       <p class="fw-bold">$${detail.price}</p>
+                     </div>
+                   </div>
+                   <div class="right d-flex flex-column me-4 mt-3 h-25 ">
+                     <div class="d-flex shadow-lg">
+                       <i style="color: #FB4921;" class="fab fa-gripfire mt-1"></i>
+                       <span >${detail.calories} calories</span>
+                     </div>
+                     <p class="mt-3">ID:${detail.id}</p>
+                   </div>
+                 </div>
+               </div>
+                `
+              )
+            });
+          },
+        });
+        
+      });  
+      
+            
+      
+   </script>
+  </body>
+</html>
